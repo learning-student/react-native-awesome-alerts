@@ -205,7 +205,7 @@ Alert.propTypes = {
   show: PropTypes.bool,
   showProgress: PropTypes.bool,
   title: PropTypes.string,
-  message: PropTypes.string,
+  message: PropTypes.oneOfType([PropTypes.string, PropTypes.node]) ,
   closeOnTouchOutside: PropTypes.bool,
   closeOnHardwareBackPress: PropTypes.bool,
   showCancelButton: PropTypes.bool,
